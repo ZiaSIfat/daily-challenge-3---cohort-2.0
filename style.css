@@ -101,6 +101,7 @@ nav button{
     
 }
 .left-top img{
+    padding: 10px;
     height: 120px;
     width: auto;
 }
@@ -112,4 +113,39 @@ nav button{
     top: 26%;
     left: 20%;
     rotate: -35deg;
+}
+
+.right-div{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    text-align: center
+}
+.right-div h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.right-div p{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #D5F903;
+}
+
+.right-div hr{
+    border: none;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: #D5F903;
+    
+}
+
+.right-div span{
+    color: #D5F903;
+}
+
+.right-div img{
+    height: 60px;
+    width: auto;
+    margin-top: 14px;
 }
