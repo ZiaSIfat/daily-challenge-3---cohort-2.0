@@ -149,3 +149,40 @@ nav button{
     width: auto;
     margin-top: 14px;
 }
+
+.bottom-div{
+    background-color: black;
+}
+
+.bottom-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+#trending{
+    color: #D5F903;
+}
+#auction{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.button-left{
+    padding: 20px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.button-right{
+    padding: 20px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
