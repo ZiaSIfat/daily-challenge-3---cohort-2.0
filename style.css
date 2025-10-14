@@ -186,3 +186,77 @@ nav button{
     border: 1px solid gray;
     border-radius: 10px;
 }
+.card-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.card{
+    height: 300px;
+    width: 200px;
+    background-color:rgb(24, 24, 24); 
+    border-radius: 10px;
+    padding: 30px 20px;
+    
+}
+
+#card1{
+    height: 100%;
+    width: auto;
+   clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 63% 100%, 63% 85%, 0 85%);
+    background-color: #8C01FA;
+    background-image: url(./images/apeOne.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: rgb(255, 255, 255);
+}
+.card-content1{
+    font-size: 10px;
+    position: absolute;
+    top: 163%;
+    left: 33.5%;
+}
+.card-content2{
+    font-size: 10px;
+    position: absolute;
+    top: 163%;
+    left: 51.5%;
+}
+.card-content3{
+    font-size: 10px;
+    position: absolute;
+    top: 163%;
+    left: 69.5%;
+}
+#card2{
+    height: 100%;
+    width: auto;
+    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 62% 100%, 63% 85%, 0 85%);
+    background-color: #D5F903;
+      background-image: url(./images/apeTwo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#card3{
+    height: 100%;
+    width: auto;
+    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 62% 100%, 63% 85%, 0 85%);
+    background-color: #FB6903;
+      background-image: url(./images/apeThree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.text{
+    font-size: 10px;
+    font-weight: 100;
+    position: absolute;
+    color: white;
+    /* top: 162%;
+    left: 33.5%; */
+}
