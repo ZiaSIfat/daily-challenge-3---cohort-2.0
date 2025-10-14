@@ -76,3 +76,40 @@ nav button{
     background-color:  rgb(24, 24, 24);
 
 }
+
+.left-top-parent{
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  -2px 0 2px #D5F903;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.left-top{
+    height: 130px;
+    width: 130px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.left-top img{
+    height: 120px;
+    width: auto;
+}
+
+.arrow{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    rotate: -35deg;
+}
