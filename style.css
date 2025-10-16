@@ -31,19 +31,45 @@ nav{
     border-radius: 30px;
     padding: 14px 24px; 
 }
-.anchor a{
+.anchor p {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+.anchor p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; 
+  width: 0%;
+  height: 2px;
+  background-color: #D5F903; 
+  transform: translateX(50%);
+}
+.anchor p:hover {
+  color: #D5F903;
+}
+.anchor p:hover::after {
+  width: 40%;
+
+}
+/* .anchor a{
     text-decoration: none;
     color: white;
-
+    margin-bottom: 5px;
     text-align: center;
     
 
-}
-.anchor p:hover{
-    color: #D5F903;
-    border-bottom: 1px solid #D5F903;
+} */
 
-}
+/* .anchor p:hover{
+    color: #D5F903;
+    border-bottom: 3px solid #D5F903;
+    transition: all 0.7s ease-out;
+
+} */
 nav button{
     padding: 10px 15px;
     border-radius: 25px;
@@ -200,6 +226,7 @@ nav button{
     background-color:rgb(24, 24, 24); 
     border-radius: 10px;
     padding: 30px 20px;
+    z-index: 1;
     
 }
 
@@ -208,31 +235,39 @@ nav button{
     border-radius: 20px;
     height: 100%;
     width: auto;
-   clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 63% 100%, 63% 85%, 0 85%);
+    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 63% 100%, 63% 85%, 0 85%);
     background-color: #8C01FA;
     background-image: url(./images/apeOne.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
-/* .card-content1{
-    font-size: 10px;
-    position: absolute;
-    top: 163%;
-    left: 33.5%;
+
+
+#card2{
+    border-radius: 20px;
+    height: 100%;
+    width: auto;
+    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 62% 100%, 63% 85%, 0 85%);
+    background-color: #D5F903;
+    background-image: url(./images/apeTwo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
-.card-content2{
-    font-size: 10px;
-    position: absolute;
-    top: 163%;
-    left: 51.5%;
+#card3{
+    border-radius: 20px;
+    height: 100%;
+    width: auto;
+    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 62% 100%, 63% 85%, 0 85%);
+    background-color: #FB6903;
+    background-image: url(./images/apeThree.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
 }
-.card-content3{
-    font-size: 10px;
-    position: absolute;
-    top: 163%;
-    left: 69.5%;
-} */
+
  .card-content1{
     position: absolute;
     top: 39px;
@@ -251,55 +286,34 @@ nav button{
     right: 20px;
     font-size: 16px;
  }
-#card2{
-    border-radius: 20px;
-    height: 100%;
-    width: auto;
-    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 62% 100%, 63% 85%, 0 85%);
-    background-color: #D5F903;
-      background-image: url(./images/apeTwo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-#card3{
-    border-radius: 20px;
-    height: 100%;
-    width: auto;
-    clip-path: polygon(0% 0%, 49% 0%, 62% 14%, 100% 14%, 100% 100%, 62% 100%, 63% 85%, 0 85%);
-    background-color: #FB6903;
-      background-image: url(./images/apeThree.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: relative;
-}
 
-.text{
-    font-size: 10px;
-    font-weight: 100;
-    position: absolute;
-    color: white;
-}
 .limited{
-    clip-path: polygon(0% 0%, 53% 0, 53% 11%, 6% 11%, 4% 20%, 0 10%);
+    clip-path: polygon(0% 0%, 54% 0, 54% 16%, 7% 16%, 3% 29%, 0 17%);
     height: 200px;
-    background-color: #D5F903;
+    
     text-align: center;
-    width: 145px;
+    width: 175px;
     color: black;
-    font-size: 10px;
+    font-size: 15px;
+    z-index: 5;
     position: absolute;
-    top: 20px;
-    
-    
+    top: 70px;
+    left: -10px;
 }
 .limited p{
     text-align: center;
-    margin-right: 60px;
-    margin-top: 5px;
+    margin-right: 80px;
+    margin-top: 4px;
 }
-
+#limited1{
+    background-color: #D5F903;
+}
+#limited2{
+    background-color: #FB6903;
+}
+#limited3{
+    background-color: #8C01FA;
+}
 .etherium{
     display: flex;
     gap:5px;
@@ -311,4 +325,40 @@ nav button{
 .etherium img{
     height: 20px;
     width: 20px;
+}
+
+.btn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    padding-bottom: 40px;
+}
+
+.btn-div button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 15px;
+
+}
+#btn-1{
+    box-shadow: 5px 5px #8C01FA;
+}
+#btn-2{
+    box-shadow: 5px 5px #D5F903;
+}
+#btn-3{
+    box-shadow: 5px 5px #FB6903;
+}
+
+.arrow2{
+     height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 126%;
+    left: 20%;
+    rotate: -15deg;
 }
